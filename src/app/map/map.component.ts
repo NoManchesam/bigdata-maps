@@ -86,7 +86,7 @@ export class MapComponent implements AfterViewInit {
  
  }
  
- private changeEstado()
+ changeEstado()
  {
    this.dataApiService.getMunicipios(this.selectedEstado)
    .subscribe((municipios: any) => {
@@ -104,7 +104,7 @@ export class MapComponent implements AfterViewInit {
  }
  
 
- private buscarDenues()
+ buscarDenues()
  {
   this.markerService.makeDenuesMarkers(this.map,
     this.selectedEstado,
